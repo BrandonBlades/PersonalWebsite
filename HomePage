@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Brandon Blades</h1>
+        <nav>
+            <ul>
+                <li><a href="PersonalWebsite.html">Home</a></li> <!-- Home button -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="blurb">
+                <h2>Welcome to My Website</h2>
+                <p>This is my current HTML project.</p>
+                <p>I've started to teach myself coding and I'm excited to share my journey with you.</p>
+            </div>
+            <div class="screenshot">
+                <img src="visualstudiojpg.jpg" alt="My VSC Code for my HomePage">
+            </div>
+        </div>
+        <!-- Move the job-areas section outside of the content div -->
+        <div class="job-areas">
+            <h2>Previous Job Areas</h2>
+            <div class="logos">
+                <img src="monzo.jpg" alt="Monzo Logo">
+                <img src="aviva.jpg" alt="Aviva Logo">
+                <img src="teleperformance.jpg" alt="Teleperformance Logo">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
