@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+header {
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.308);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    margin-right: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+main {
+    text-align: center;
+    margin-top: 100px; /* Adjust this value if needed */
+}
+main h2 {
+    margin-top: 20px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px; /* Reduce this value to move content closer to the top */
+}
+.blurb {
+    opacity: 0; /* Start with the text hidden */
+    animation: fadeInText 2s forwards; /* Apply the animation */
+}
+.screenshot {
+    flex: 1;
+    padding: 20px;
+    opacity: 0; /* Start with the image hidden */
+    transform: translateY(20px); /* Start with the image slightly lower */
+    animation: fadeInUp 3s forwards; /* Apply the animation */
+}
+.screenshot img {
+    max-width: 100%;
+    max-height: 500px; /* Set a maximum height */
+    border-radius: 10px;
+    border: 5px solid #fff; /* White border */
+}
+.job-areas {
+    text-align: center;
+    margin-top: 40px; /* Adjust this value as needed */
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the logos */
+    margin-top: 20px;
+}
+.logos img {
+    max-width: 150px; /* Adjust the size as needed */
+    border-radius: 10px;
+    border: 5px solid #fff; /* White border */
+}
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
